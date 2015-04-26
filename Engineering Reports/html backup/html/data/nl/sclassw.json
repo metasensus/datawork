@@ -1,0 +1,33 @@
+{
+
+"title":[{"caption":"NL Service time distributions: S Class(W)"}],
+"xaxis":[{"name":"svctime","label":"Service Time"}],
+"yaxis":[{"name":"count","label":"Occurence Count"}],
+"table":[{
+"column1":"svctime",
+"column2":"count",
+"column3":"percent"}],
+"data":[
+{"svctime":"0","count":"5162318","percent":"31.93%"},
+{"svctime":"1","count":"78780","percent":"0.49%"},
+{"svctime":"2","count":"60185","percent":"0.37%"},
+{"svctime":"3","count":"67701","percent":"0.42%"},
+{"svctime":"4","count":"63146","percent":"0.39%"},
+{"svctime":"5","count":"66018","percent":"0.41%"},
+{"svctime":"6","count":"119973","percent":"0.74%"},
+{"svctime":"7","count":"255330","percent":"1.58%"},
+{"svctime":"8","count":"444069","percent":"2.75%"},
+{"svctime":"9","count":"385507","percent":"2.38%"},
+{"svctime":"10","count":"410355","percent":"2.54%"},
+{"svctime":"11","count":"438136","percent":"2.71%"},
+{"svctime":"12","count":"453621","percent":"2.81%"},
+{"svctime":"13","count":"452582","percent":"2.8%"},
+{"svctime":"14","count":"438031","percent":"2.71%"},
+{"svctime":"15","count":"411376","percent":"2.54%"},
+{"svctime":"16","count":"375044","percent":"2.32%"},
+{"svctime":"17","count":"336995","percent":"2.08%"},
+{"svctime":"18","count":"297193","percent":"1.84%"},
+{"svctime":"19","count":"267881","percent":"1.66%"},
+{"svctime":"20+","count":"5583271","percent":"34.53%"}]
+
+}

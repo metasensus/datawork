@@ -1,0 +1,1 @@
+delete from STAT_SPLIT_FILE_LOOKUP WHERE DATATYPE='hwinvent';

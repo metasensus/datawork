@@ -1,0 +1,12 @@
+{
+
+"title":[{"caption":"Frontside Bandwidth-7450 C (W)  (Xaxis: Bandwidth, Yaxis:Percent_System)"}],
+"xaxis":[{"name":"Frontside Bandwidth","label":"Frontside Bandwidth"}],
+"yaxis":[{"name":"Percent_system","label":"Percent_system"}],
+"table":[{
+"column1":"Frontside Bandwidth",
+"column2":"Percent_system"}],
+"data":[
+{"Frontside Bandwidth":"0","Percent_system":"100"}]
+
+}

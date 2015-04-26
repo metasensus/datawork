@@ -1,0 +1,13 @@
+{
+
+"title":[{"caption":"SSD LifeLeft: E Class"}],
+"xaxis":[{"name":"svctime","label":"Service Time"}],
+"yaxis":[{"name":"count","label":"Occurence Count"}],
+"table":[{
+"column1":"Time",
+"column2":"Percent_system",
+"column3":"lifeleft",
+"column4":"color"}],
+"data":[]
+
+}

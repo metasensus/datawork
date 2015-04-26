@@ -1,0 +1,18 @@
+{
+
+"title":[{"caption":"Frontside Bandwidth-S800 X(W)  (Xaxis: Bandwidth, Yaxis:Percent_System)"}],
+"xaxis":[{"name":"Frontside Bandwidth","label":"Frontside Bandwidth"}],
+"yaxis":[{"name":"Percent_system","label":"Percent_system"}],
+"table":[{
+"column1":"Frontside Bandwidth",
+"column2":"Percent_system"}],
+"data":[
+{"Frontside Bandwidth":"0","Percent_system":"89.8"},
+{"Frontside Bandwidth":"1","Percent_system":"83.67"},
+{"Frontside Bandwidth":"2","Percent_system":"6.12"},
+{"Frontside Bandwidth":"3","Percent_system":"4.08"},
+{"Frontside Bandwidth":"4","Percent_system":"4.08"},
+{"Frontside Bandwidth":"5","Percent_system":"2.04"},
+{"Frontside Bandwidth":"13","Percent_system":"2.04"}]
+
+}

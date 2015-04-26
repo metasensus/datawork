@@ -1,0 +1,13 @@
+{
+
+"title":[{"caption":"SSD LifeLeft: S Class  (Xaxis: Time, Yaxis:Percent_System)"}],
+"xaxis":[{"name":"Time","label":"Time"}],
+"yaxis":[{"name":"Percent_system","label":"Percent_system"}],
+"table":[{
+"column1":"Time",
+"column2":"Percent_system",
+"column3":"lifeleft",
+"column4":"color"}],
+"data":[]
+
+}

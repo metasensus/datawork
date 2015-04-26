@@ -1,0 +1,33 @@
+{
+
+"title":[{"caption":"FC Service time distributions: S Class(W)"}],
+"xaxis":[{"name":"svctime","label":"Service Time"}],
+"yaxis":[{"name":"count","label":"Occurence Count"}],
+"table":[{
+"column1":"svctime",
+"column2":"count",
+"column3":"percent"}],
+"data":[
+{"svctime":"0","count":"6834987","percent":"15.03%"},
+{"svctime":"1","count":"125294","percent":"0.28%"},
+{"svctime":"2","count":"198720","percent":"0.44%"},
+{"svctime":"3","count":"205880","percent":"0.45%"},
+{"svctime":"4","count":"601118","percent":"1.32%"},
+{"svctime":"5","count":"1526026","percent":"3.36%"},
+{"svctime":"6","count":"2313019","percent":"5.09%"},
+{"svctime":"7","count":"2308465","percent":"5.08%"},
+{"svctime":"8","count":"2176619","percent":"4.79%"},
+{"svctime":"9","count":"2142196","percent":"4.71%"},
+{"svctime":"10","count":"2157970","percent":"4.75%"},
+{"svctime":"11","count":"2163219","percent":"4.76%"},
+{"svctime":"12","count":"2123266","percent":"4.67%"},
+{"svctime":"13","count":"1994986","percent":"4.39%"},
+{"svctime":"14","count":"1782282","percent":"3.92%"},
+{"svctime":"15","count":"1563270","percent":"3.44%"},
+{"svctime":"16","count":"1391949","percent":"3.06%"},
+{"svctime":"17","count":"1248281","percent":"2.75%"},
+{"svctime":"18","count":"1124429","percent":"2.47%"},
+{"svctime":"19","count":"1012029","percent":"2.23%"},
+{"svctime":"20+","count":"10473681","percent":"23.04%"}]
+
+}

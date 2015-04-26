@@ -1,0 +1,41 @@
+{
+
+"title":[{"caption":"Frontside Bandwidth-7450 (W)  (Xaxis: Bandwidth, Yaxis:Percent_System)"}],
+"xaxis":[{"name":"Frontside Bandwidth","label":"Frontside Bandwidth"}],
+"yaxis":[{"name":"Percent_system","label":"Percent_system"}],
+"table":[{
+"column1":"Frontside Bandwidth",
+"column2":"Percent_system"}],
+"data":[
+{"Frontside Bandwidth":"0","Percent_system":"94"},
+{"Frontside Bandwidth":"1","Percent_system":"53.33"},
+{"Frontside Bandwidth":"2","Percent_system":"9.33"},
+{"Frontside Bandwidth":"3","Percent_system":"2.67"},
+{"Frontside Bandwidth":"4","Percent_system":"0.67"},
+{"Frontside Bandwidth":"5","Percent_system":"2"},
+{"Frontside Bandwidth":"6","Percent_system":"1.33"},
+{"Frontside Bandwidth":"7","Percent_system":"2.67"},
+{"Frontside Bandwidth":"8","Percent_system":"0.67"},
+{"Frontside Bandwidth":"10","Percent_system":"0.67"},
+{"Frontside Bandwidth":"13","Percent_system":"0.67"},
+{"Frontside Bandwidth":"15","Percent_system":"0.67"},
+{"Frontside Bandwidth":"16","Percent_system":"1.33"},
+{"Frontside Bandwidth":"17","Percent_system":"0.67"},
+{"Frontside Bandwidth":"19","Percent_system":"0.67"},
+{"Frontside Bandwidth":"20","Percent_system":"0.67"},
+{"Frontside Bandwidth":"30","Percent_system":"0.67"},
+{"Frontside Bandwidth":"31","Percent_system":"0.67"},
+{"Frontside Bandwidth":"33","Percent_system":"2"},
+{"Frontside Bandwidth":"35","Percent_system":"0.67"},
+{"Frontside Bandwidth":"44","Percent_system":"0.67"},
+{"Frontside Bandwidth":"45","Percent_system":"0.67"},
+{"Frontside Bandwidth":"55","Percent_system":"0.67"},
+{"Frontside Bandwidth":"78","Percent_system":"0.67"},
+{"Frontside Bandwidth":"94","Percent_system":"0.67"},
+{"Frontside Bandwidth":"95","Percent_system":"0.67"},
+{"Frontside Bandwidth":"243","Percent_system":"0.67"},
+{"Frontside Bandwidth":"401","Percent_system":"0.67"},
+{"Frontside Bandwidth":"605","Percent_system":"0.67"},
+{"Frontside Bandwidth":"3263","Percent_system":"0.67"}]
+
+}

@@ -1,0 +1,35 @@
+{
+
+"title":[{"caption":"Frontside Bandwidth-V800 (W)  (Xaxis: Bandwidth, Yaxis:Percent_System)"}],
+"xaxis":[{"name":"Frontside Bandwidth","label":"Frontside Bandwidth"}],
+"yaxis":[{"name":"Percent_system","label":"Percent_system"}],
+"table":[{
+"column1":"Frontside Bandwidth",
+"column2":"Percent_system"}],
+"data":[
+{"Frontside Bandwidth":"0","Percent_system":"97.8"},
+{"Frontside Bandwidth":"1","Percent_system":"83.52"},
+{"Frontside Bandwidth":"2","Percent_system":"10.62"},
+{"Frontside Bandwidth":"3","Percent_system":"4.58"},
+{"Frontside Bandwidth":"4","Percent_system":"2.75"},
+{"Frontside Bandwidth":"5","Percent_system":"1.1"},
+{"Frontside Bandwidth":"6","Percent_system":"0.92"},
+{"Frontside Bandwidth":"8","Percent_system":"0.55"},
+{"Frontside Bandwidth":"9","Percent_system":"0.37"},
+{"Frontside Bandwidth":"10","Percent_system":"0.37"},
+{"Frontside Bandwidth":"11","Percent_system":"0.37"},
+{"Frontside Bandwidth":"12","Percent_system":"0.37"},
+{"Frontside Bandwidth":"14","Percent_system":"0.18"},
+{"Frontside Bandwidth":"16","Percent_system":"0.37"},
+{"Frontside Bandwidth":"17","Percent_system":"0.37"},
+{"Frontside Bandwidth":"18","Percent_system":"0.37"},
+{"Frontside Bandwidth":"19","Percent_system":"0.18"},
+{"Frontside Bandwidth":"20","Percent_system":"0.18"},
+{"Frontside Bandwidth":"26","Percent_system":"0.18"},
+{"Frontside Bandwidth":"35","Percent_system":"0.18"},
+{"Frontside Bandwidth":"44","Percent_system":"0.18"},
+{"Frontside Bandwidth":"69","Percent_system":"0.18"},
+{"Frontside Bandwidth":"102","Percent_system":"0.18"},
+{"Frontside Bandwidth":"118","Percent_system":"0.18"}]
+
+}

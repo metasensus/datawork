@@ -1,0 +1,270 @@
+
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>SSD Service time distribution: T Class(W)</title>
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/dashboard.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+		<style type="text/css">
+			.axis path,
+			.axis line
+			 {
+			fill: none;
+			stroke: #000;
+			shape-rendering: crispEdges;
+			}
+			.bar   { fill: orange; }
+			.bar:hover {fill: blue ;}
+			.x.axis path{display: none; }
+			.d3-tip
+			{
+			line-height: 1;
+			font-weight: bold;
+			padding: 12px;
+			background: rgba(0, 0, 0, 0.8);
+			color: #fff;
+			border-radius: 2px;
+			 }
+			/* Creates a small triangle extender for the tooltip */
+			.d3-tip:after
+			{
+			box-sizing: border-box;
+			display: inline;
+			font-size: 10px;
+			width: 100%;
+			line-height: 1;
+			color: rgba(0, 0, 0, 0.8);
+			content: "\25BC";
+			position: absolute;
+			text-align: center;
+			}
+			/* Style northward tooltips differently */
+			.d3-tip.n:after
+			{
+			margin: -1px 0 0 0;
+			top: 100%;
+			left: 0;
+			}
+			table
+			{
+			 border: 1px solid #666;
+			 width: 37;
+			 top: 47%;
+			 left: 59%;
+			 position: absolute;
+			}
+			 th
+			 {
+			 background: #f8f8f8; 
+			font-weight: bold;
+			padding: 2px;
+			}
+			#tableContainer-2 {
+			vertical-align: middle;
+			display: table-cell;
+			height: 100%;
+			}
+		</style>
+		<body>
+			<script src="http://d3js.org/d3.v3.min.js"></script>
+			<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+			<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+			<div class="page-header" id="header">
+				<h1></h1>
+			</div>
+			<div class="btn-group-vertical pull-right">
+				<button type="button" class="btn btn-default">
+				<a href="../ssd/7000r.html">SSD</a>
+				</button> 
+				<button type="button" class="btn btn-default">
+				<a href="../nl/7000r.html">NL</a>
+				</button>
+				<button type="button" class="btn btn-default">
+				<a href="../fc/7000r.html">FC</a>
+				</button>
+			</div>
+			<script>
+				 var margin = {top: 150, right: 0, bottom: 40, left: 400},
+				width = 960 - margin.left - margin.right,
+				height = 700 - margin.top - margin.bottom;
+				var formatPercent = d3.format(".0");
+				var x = d3.scale.ordinal()
+					.rangeRoundBands([0, width], .1,0.5);  //0.5 is the distance from y axis of bars, more numbers means more distance;
+				var y = d3.scale.linear()
+					.range([height, 0]);
+				var xAxis = d3.svg.axis()
+					.scale(x)
+					.orient("bottom");
+				var yAxis = d3.svg.axis()
+					.scale(y)
+					.orient("left")
+					.tickFormat(formatPercent);
+				var tip = d3.tip()
+					.attr('class', 'd3-tip')
+					.offset([-10, 0])
+					.html(function(d) {
+					return "<strong>Count:</strong> <span style='color:red'>" + d[y1] + "</span>";})
+				var svg = d3.select("body").append("svg")
+					.attr("width", width + margin.left + margin.right)
+					.attr("height", height + margin.top + margin.bottom)
+					.append("g")
+					.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+				svg.call(tip);
+				var url = "../data/ssd/tclassw.json";
+				var x1,y1;
+				var z,head;
+				z="percent";
+				d3.json(url, function(error, data)
+					{
+						$.each(data.xaxis, function(i, f)
+					{
+					x1=f.name;
+					});
+					 $.each(data.yaxis, function(i, f)
+					{
+					y1=f.name;
+					});
+					$.each(data.data, function(i, d)
+					{
+					d[y1]=+d[y1];
+					});
+				x.domain(data.data.map(function(d) { return d[x1]; }));  
+				y.domain([0, d3.max(data.data, function(d) { return d[y1]; })]);
+				svg.append("g")
+					.attr("class", "x axis")
+					.attr("transform", "translate(0," + height + ")")
+					.call(xAxis)
+					.append("text")
+					.attr("fill","Blue")
+					.attr("x", 230)
+					.attr("y",35)
+					.attr("dx", "0.2em")
+					.style("text-anchor", "middle")
+					.text(x1);
+				svg.append("g")
+					.attr("class", "y axis")
+					.call(yAxis)
+					.append("text")
+					.attr("fill","Blue")
+					.attr("transform", "rotate(-90)")
+					.attr("y", 6)
+					.attr("dy", ".3em")
+					.style("text-anchor", "middle")
+					.text(y1);
+				svg.selectAll(".bar")
+					.data(data.data)
+					.enter().append("rect")
+					.attr("class", "bar")
+					.attr("fill", "teal")
+					.attr("x", function(d) { return x(d[x1]); })
+					.attr("width", x.rangeBand())
+					.attr("y", function(d) { return y(d[y1]); })
+					.attr("height", function(d) { return height - y(d[y1]); })
+					.on('mouseover', tip.show)
+					.on('mouseout', tip.hide)
+					});
+			</script>
+			<script>
+				$.getJSON(url, function(data) {
+					for (var i in data.data)
+				{
+					var tblRow = "<tr>" + "<td>" + data.data[i][x1] + "</td>" +"<td>" + data.data[i][y1] + "</td>" + "<td>"+data.data[i][z]+"</td>"+ "</tr>"
+					$(tblRow).appendTo("#userdata tbody");
+					}
+				$.each(data.title, function(i, f)
+				{
+					head="<h1>"+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+ f.caption + "</h1>"
+					$(head).appendTo("#header h1");
+				});
+			});
+			</script>
+			<script>
+				$(document).ready(function () {
+					$('label.tree-toggler').click(function () {
+				$(this).parent().children('ul.tree').toggle(300);
+					});
+				});
+			</script>
+</head>
+				<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+					<div class="container-fluid">
+						<div class="navbar-header">
+						<a class="navbar-brand" href="#">SSD Service time distributions</a>
+						</div>
+					<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="../index.html">Dashboard</a></li>
+						<li><a href="#">Settings</a></li>
+						<li><a href="#">Profile</a></li>
+						<li><a href="#">Help</a></li>
+					</ul>
+					</div>
+					</div>
+				</div>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-3 col-md-2 sidebar">
+						 <ul class="nav nav-sidebar">
+							<li class="active"><a href="#">Dashboard</a></li>
+						</ul>
+						<ul class="nav nav-sidebar">
+							<ul class="nav nav-list">
+								<li class="active"><label class="tree-toggler"><a href="#">SSD Service time Distributions: 7000</a></label>
+								<ul class="nav nav-list tree">
+									<li><a href="7000w.html">SSD Write</a></li>
+									<li><a href="7000r.html">SSD Read</a></li>
+									<li><a href="7000t.html">SSD Total</a></li>
+								</ul>
+								</li>
+								</ul>
+							</ul>
+						<ul class="nav nav-sidebar">
+							<ul class="nav nav-list">
+								<li class="active"><label class="tree-toggler"><a href="#">SSD Service time Distributions: 10000</a></label>
+									<ul class="nav nav-list tree">
+										<li><a href="10000w.html">SSD Write</a></li>
+										<li><a href="10000r.html">SSD Read</a></li>
+										<li><a href="10000t.html">SSD Total</a></li>
+									</ul>
+								</li>
+							</ul>
+						</ul>
+						<ul class="nav nav-sidebar">
+							<ul class="nav nav-list">
+								<li class="active"><label class="tree-toggler"><a href="#">SSD Service time Distributions: F Class</a></label>
+									<ul class="nav nav-list tree">
+										<li><a href="fclassw.html">SSD Write</a></li>
+										<li><a href="fclassr.html">SSD Read</a></li>
+										<li><a href="fclasst.html">SSD Total</a></li>
+									</ul>
+								</li>
+							</ul>
+						</ul>
+						<ul class="nav nav-sidebar">
+							<ul class="nav nav-list">
+								<li class="active"><label class="tree-toggler"><a href="#">SSD Service time Distributions: T Class</a></label>
+									<ul class="nav nav-list tree">
+										<li><a href="tclassw.html">SSD Write</a></li>
+										<li><a href="tclassr.html">SSD Read</a></li>
+										<li><a href="tclasst.html">SSD Total</a></li>
+									</ul>
+								</li>
+							</ul>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<table id= "userdata" border="2" class="table-hover table-striped">
+				<thead>
+					<th>Svctime(ms)</th>
+					<th>Occurrence</th>
+					<th>Percent</th>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>

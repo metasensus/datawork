@@ -1,0 +1,25 @@
+{
+
+"title":[{"caption":"Frontside Bandwidth-S400 X(W)  (Xaxis: Bandwidth, Yaxis:Percent_System)"}],
+"xaxis":[{"name":"Frontside Bandwidth","label":"Frontside Bandwidth"}],
+"yaxis":[{"name":"Percent_system","label":"Percent_system"}],
+"table":[{
+"column1":"Frontside Bandwidth",
+"column2":"Percent_system"}],
+"data":[
+{"Frontside Bandwidth":"0","Percent_system":"93.33"},
+{"Frontside Bandwidth":"1","Percent_system":"86.67"},
+{"Frontside Bandwidth":"2","Percent_system":"13.85"},
+{"Frontside Bandwidth":"3","Percent_system":"5.64"},
+{"Frontside Bandwidth":"4","Percent_system":"3.08"},
+{"Frontside Bandwidth":"5","Percent_system":"3.59"},
+{"Frontside Bandwidth":"6","Percent_system":"1.03"},
+{"Frontside Bandwidth":"7","Percent_system":"1.54"},
+{"Frontside Bandwidth":"8","Percent_system":"0.51"},
+{"Frontside Bandwidth":"9","Percent_system":"0.51"},
+{"Frontside Bandwidth":"28","Percent_system":"0.51"},
+{"Frontside Bandwidth":"37","Percent_system":"0.51"},
+{"Frontside Bandwidth":"75","Percent_system":"0.51"},
+{"Frontside Bandwidth":"182","Percent_system":"0.51"}]
+
+}

@@ -1,0 +1,33 @@
+{
+
+"title":[{"caption":"SSD Service time distributions: 7000(T)"}],
+"xaxis":[{"name":"svctime","label":"Service Time"}],
+"yaxis":[{"name":"count","label":"Occurence Count"}],
+"table":[{
+"column1":"svctime",
+"column2":"count",
+"column3":"percent"}],
+"data":[
+{"svctime":"0","count":"34133550","percent":"65.96%"},
+{"svctime":"1","count":"16063158","percent":"31.04%"},
+{"svctime":"2","count":"1181158","percent":"2.28%"},
+{"svctime":"3","count":"227510","percent":"0.44%"},
+{"svctime":"4","count":"63718","percent":"0.12%"},
+{"svctime":"5","count":"26509","percent":"0.05%"},
+{"svctime":"6","count":"14852","percent":"0.03%"},
+{"svctime":"7","count":"9888","percent":"0.02%"},
+{"svctime":"8","count":"6038","percent":"0.01%"},
+{"svctime":"9","count":"3951","percent":"0.01%"},
+{"svctime":"10","count":"3069","percent":"0.01%"},
+{"svctime":"11","count":"2279","percent":"0%"},
+{"svctime":"12","count":"1766","percent":"0%"},
+{"svctime":"13","count":"1482","percent":"0%"},
+{"svctime":"14","count":"1122","percent":"0%"},
+{"svctime":"15","count":"903","percent":"0%"},
+{"svctime":"16","count":"827","percent":"0%"},
+{"svctime":"17","count":"694","percent":"0%"},
+{"svctime":"18","count":"572","percent":"0%"},
+{"svctime":"19","count":"494","percent":"0%"},
+{"svctime":"20+","count":"6140","percent":"0.01%"}]
+
+}

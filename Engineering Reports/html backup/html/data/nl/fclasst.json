@@ -1,0 +1,33 @@
+{
+
+"title":[{"caption":"NL Service time distributions: F Class(T)"}],
+"xaxis":[{"name":"svctime","label":"Service Time"}],
+"yaxis":[{"name":"count","label":"Occurence Count"}],
+"table":[{
+"column1":"svctime",
+"column2":"count",
+"column3":"percent"}],
+"data":[
+{"svctime":"0","count":"7558216","percent":"10.42%"},
+{"svctime":"1","count":"17081","percent":"0.02%"},
+{"svctime":"2","count":"114614","percent":"0.16%"},
+{"svctime":"3","count":"259423","percent":"0.36%"},
+{"svctime":"4","count":"397534","percent":"0.55%"},
+{"svctime":"5","count":"557972","percent":"0.77%"},
+{"svctime":"6","count":"769560","percent":"1.06%"},
+{"svctime":"7","count":"1077866","percent":"1.49%"},
+{"svctime":"8","count":"1432742","percent":"1.98%"},
+{"svctime":"9","count":"1727983","percent":"2.38%"},
+{"svctime":"10","count":"1983826","percent":"2.73%"},
+{"svctime":"11","count":"2222516","percent":"3.06%"},
+{"svctime":"12","count":"2469594","percent":"3.4%"},
+{"svctime":"13","count":"2732534","percent":"3.77%"},
+{"svctime":"14","count":"3001712","percent":"4.14%"},
+{"svctime":"15","count":"3234625","percent":"4.46%"},
+{"svctime":"16","count":"3373679","percent":"4.65%"},
+{"svctime":"17","count":"3386131","percent":"4.67%"},
+{"svctime":"18","count":"3305082","percent":"4.56%"},
+{"svctime":"19","count":"3119512","percent":"4.3%"},
+{"svctime":"20+","count":"29796743","percent":"41.08%"}]
+
+}

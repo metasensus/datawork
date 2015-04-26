@@ -1,0 +1,43 @@
+{
+
+"title":[{"caption":"Frontside Bandwidth-S400 X(R) (Xaxis: Bandwidth, Yaxis:Percent_System)"}],
+"xaxis":[{"name":"Frontside Bandwidth","label":"Frontside Bandwidth"}],
+"yaxis":[{"name":"Percent_system","label":"Percent_system"}],
+"table":[{
+"column1":"Frontside Bandwidth",
+"column2":"Percent_system"}],
+"data":[
+{"Frontside Bandwidth":"0","Percent_system":"89.74"},
+{"Frontside Bandwidth":"1","Percent_system":"84.62"},
+{"Frontside Bandwidth":"2","Percent_system":"24.62"},
+{"Frontside Bandwidth":"3","Percent_system":"9.74"},
+{"Frontside Bandwidth":"4","Percent_system":"6.15"},
+{"Frontside Bandwidth":"5","Percent_system":"3.59"},
+{"Frontside Bandwidth":"6","Percent_system":"3.08"},
+{"Frontside Bandwidth":"7","Percent_system":"2.05"},
+{"Frontside Bandwidth":"8","Percent_system":"1.03"},
+{"Frontside Bandwidth":"9","Percent_system":"2.56"},
+{"Frontside Bandwidth":"10","Percent_system":"2.05"},
+{"Frontside Bandwidth":"11","Percent_system":"1.54"},
+{"Frontside Bandwidth":"12","Percent_system":"1.03"},
+{"Frontside Bandwidth":"14","Percent_system":"0.51"},
+{"Frontside Bandwidth":"15","Percent_system":"2.05"},
+{"Frontside Bandwidth":"16","Percent_system":"0.51"},
+{"Frontside Bandwidth":"17","Percent_system":"1.03"},
+{"Frontside Bandwidth":"22","Percent_system":"1.03"},
+{"Frontside Bandwidth":"23","Percent_system":"1.03"},
+{"Frontside Bandwidth":"27","Percent_system":"0.51"},
+{"Frontside Bandwidth":"29","Percent_system":"0.51"},
+{"Frontside Bandwidth":"36","Percent_system":"0.51"},
+{"Frontside Bandwidth":"54","Percent_system":"0.51"},
+{"Frontside Bandwidth":"59","Percent_system":"0.51"},
+{"Frontside Bandwidth":"66","Percent_system":"1.03"},
+{"Frontside Bandwidth":"95","Percent_system":"0.51"},
+{"Frontside Bandwidth":"103","Percent_system":"0.51"},
+{"Frontside Bandwidth":"125","Percent_system":"0.51"},
+{"Frontside Bandwidth":"205","Percent_system":"0.51"},
+{"Frontside Bandwidth":"224","Percent_system":"0.51"},
+{"Frontside Bandwidth":"265","Percent_system":"0.51"},
+{"Frontside Bandwidth":"537","Percent_system":"0.51"}]
+
+}

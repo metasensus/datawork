@@ -1,0 +1,33 @@
+{
+
+"title":[{"caption":"SSD Service time distribution: F Class(w)"}],
+"xaxis":[{"name":"svctime","label":"Service Time"}],
+"yaxis":[{"name":"count","label":"Occurence Count"}],
+"table":[{
+"column1":"svctime",
+"column2":"count",
+"column3":"percent"}],
+"data":[
+{"svctime":"0","count":"4149894","percent":"44.04%"},
+{"svctime":"1","count":"3104867","percent":"32.95%"},
+{"svctime":"2","count":"996734","percent":"10.58%"},
+{"svctime":"3","count":"475203","percent":"5.04%"},
+{"svctime":"4","count":"322951","percent":"3.43%"},
+{"svctime":"5","count":"186483","percent":"1.98%"},
+{"svctime":"6","count":"91378","percent":"0.97%"},
+{"svctime":"7","count":"49884","percent":"0.53%"},
+{"svctime":"8","count":"24016","percent":"0.25%"},
+{"svctime":"9","count":"10659","percent":"0.11%"},
+{"svctime":"10","count":"4556","percent":"0.05%"},
+{"svctime":"11","count":"2396","percent":"0.03%"},
+{"svctime":"12","count":"1279","percent":"0.01%"},
+{"svctime":"13","count":"792","percent":"0.01%"},
+{"svctime":"14","count":"521","percent":"0.01%"},
+{"svctime":"15","count":"454","percent":"0%"},
+{"svctime":"16","count":"321","percent":"0%"},
+{"svctime":"17","count":"229","percent":"0%"},
+{"svctime":"18","count":"199","percent":"0%"},
+{"svctime":"19","count":"168","percent":"0%"},
+{"svctime":"20+","count":"1087","percent":"0.01%"}]
+
+}

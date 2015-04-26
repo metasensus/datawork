@@ -1,0 +1,33 @@
+{
+
+"title":[{"caption":"NL Service time distributions: E Class(T)"}],
+"xaxis":[{"name":"svctime","label":"Service Time"}],
+"yaxis":[{"name":"count","label":"Occurence Count"}],
+"table":[{
+"column1":"svctime",
+"column2":"count",
+"column3":"percent"}],
+"data":[
+{"svctime":"0","count":"85828","percent":"12.4%"},
+{"svctime":"1","count":"1890","percent":"0.27%"},
+{"svctime":"2","count":"1443","percent":"0.21%"},
+{"svctime":"3","count":"387","percent":"0.06%"},
+{"svctime":"4","count":"2279","percent":"0.33%"},
+{"svctime":"5","count":"5955","percent":"0.86%"},
+{"svctime":"6","count":"6771","percent":"0.98%"},
+{"svctime":"7","count":"9465","percent":"1.37%"},
+{"svctime":"8","count":"11527","percent":"1.67%"},
+{"svctime":"9","count":"13002","percent":"1.88%"},
+{"svctime":"10","count":"14079","percent":"2.03%"},
+{"svctime":"11","count":"15233","percent":"2.2%"},
+{"svctime":"12","count":"15789","percent":"2.28%"},
+{"svctime":"13","count":"15586","percent":"2.25%"},
+{"svctime":"14","count":"15547","percent":"2.25%"},
+{"svctime":"15","count":"15139","percent":"2.19%"},
+{"svctime":"16","count":"14768","percent":"2.13%"},
+{"svctime":"17","count":"14615","percent":"2.11%"},
+{"svctime":"18","count":"14588","percent":"2.11%"},
+{"svctime":"19","count":"14519","percent":"2.1%"},
+{"svctime":"20+","count":"403638","percent":"58.33%"}]
+
+}
